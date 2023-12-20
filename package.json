@@ -13,7 +13,7 @@
         "data:destroy": "node src/seeder/seeder -d ",
         "start": "nodemon index.js",
         "dev": "SET NODE_ENV=DEVELOPMENT& nodemon index.js",
-        "prod": "SET NODE_ENV=PRODUCTION& nodemon index.js",
+        "prod": "SET NODE_ENV=PRODUCTION& node index.js",
         "swagger-autogen": "node src/seeder/swagger.js"
     },
     "author": "",
