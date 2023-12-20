@@ -58,7 +58,7 @@ const corsOptions = {
     ],
     credentials: true, //access-control-allow-credentials:true
     optionSuccessStatus: 200,
-    all
+
 }
 app.use(cors(corsOptions))
 
