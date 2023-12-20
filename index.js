@@ -57,7 +57,9 @@ const corsOptions = {
         'https://tlcn-admin-hln.vercel.app',
         'https://ecom-nlh-v3.vercel.app',
         'https://e-com-nlh-fe.vercel.app',
-        'https://kltn-fe-ql.vercel.app'
+        'https://kltn-fe-ql.vercel.app',
+        'https://kltn-fe-admin-ql.vercel.app'
+
     ],
     credentials: true, //access-control-allow-credentials:true
     optionSuccessStatus: 200,
@@ -118,7 +120,8 @@ const io = require('socket.io')(server, {
             'http://localhost:3000',
             'https://ecom-nlh-v3.vercel.app',
             'https://tlcn-admin-hln.vercel.app',
-            'https://kltn-fe-ql.vercel.app'
+            'https://kltn-fe-ql.vercel.app',
+            'https://kltn-fe-admin-ql.vercel.app'
 
         ],
         // credentials: true,
