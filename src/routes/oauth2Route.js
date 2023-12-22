@@ -13,12 +13,12 @@ router.route('/google').get(passport.authenticate('google', {
     }))
     // [GET] /api/oauth2/redirect/google
 router.route('/google/callback').get(passport.authenticate('google', {
-    failureRedirect: 'https://tlcn-2022-be.onrender.com/api/oauth2/error',
+    failureRedirect: 'https://kltn-be-ql.onrender.com/api/oauth2/error',
 }), function(req, res) {
     if (!req.user) return next(new ErrorResponse("User not found", 404))
 
     const accessToken = req.user.getJwtToken()
-    res.redirect(`https://e-com-nlh-fe.vercel.app/oauth2/redirect?token=${accessToken}`)
+    res.redirect(`https://kltn-fe-ql.vercel.app/oauth2/redirect?token=${accessToken}`)
 
 })
 
@@ -30,12 +30,12 @@ router.route('/facebook').get(passport.authenticate('facebook'))
 
 // [GET] /oauth2/facebook/callback
 router.route('/facebook/callback').get(passport.authenticate('facebook', {
-        failureRedirectL: 'https://tlcn-2022-be.onrender.com/api/oauth2/error',
+        failureRedirectL: 'https://kltn-be-ql.onrender.com/api/oauth2/error',
     }), function(req, res) {
 
         if (!req.user) return next(new ErrorResponse("User not found", 404))
         const accessToken = req.user.getJwtToken()
-        res.redirect(`https://e-com-nlh-fe.vercel.app/oauth2/redirect?token=${accessToken}`)
+        res.redirect(`https://kltn-fe-ql.vercel.app/oauth2/redirect?token=${accessToken}`)
     })
     //@@ RESPONSE
     // [GET] /api/oauth2/error

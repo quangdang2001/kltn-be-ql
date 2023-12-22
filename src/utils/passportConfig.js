@@ -8,7 +8,7 @@ const FacebookStrategy = require('passport-facebook').Strategy;
 passport.use(new GoogleStrategy({
         clientID: process.env.GOOGLE_CLIENT_ID,
         clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-        callbackURL: "https://tlcn-2022-be.onrender.com/api/oauth2/google/callback"
+        callbackURL: "https://kltn-be-ql.onrender.com/api/oauth2/google/callback"
     },
     async function(accessToken, refreshToken, profile, cb) {
         const {
@@ -47,7 +47,7 @@ passport.use(new GoogleStrategy({
 passport.use(new FacebookStrategy({
     clientID: process.env.FACEBOOK_APP_ID,
     clientSecret: process.env.FACEBOOK_APP_SECRET,
-    callbackURL: "https://tlcn-2022-be.onrender.com/api/oauth2/facebook/callback",
+    callbackURL: "https://kltn-be-ql.onrender.com/api/oauth2/facebook/callback",
     profileFields: ['email', 'name', 'displayName', 'photos']
 }, async function(accessToken, refreshToken, profile, cb) {
     process.nextTick(async function() {

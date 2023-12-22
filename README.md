@@ -8,7 +8,7 @@
 ## Team 56 WebApp all version
 
 **Version 2.0** - Latest - NLH ecom app - HCMUTE TLCN project 2022 <br/>
-**Link:** https://e-com-nlh-fe.vercel.app <br/>
+**Link:** https://kltn-fe-ql.vercel.app <br/>
 **Version 1.0** - Old - TGDD clone app - Intership program Fsoft Acedemy 2022 <br/>
 **Link:** https://02-tgdd-react02.vercel.app
 
@@ -16,7 +16,7 @@
 
 Heroku's free dynos will no longer be available from 28, Novemver 2022 <br/>
 **Alter: Render WebService <br/>
-**Link: https://tlcn-2022-be.onrender.com <br/>**
+**Link: https://kltn-be-ql.onrender.com <br/>**
 But Heroku still be available now <br/>
 **Link: https://tlcn-2022-be.herokuapp.com <br/>\*\*
 
