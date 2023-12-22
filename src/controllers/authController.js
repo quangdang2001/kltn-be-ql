@@ -37,7 +37,10 @@ class authController {
                 email: email,
             })
 
-            if (user) return next(new ErrorResponse(`Existing email`, 400))
+            if (user) {
+                console.log("Existing email", user)
+                return next(new ErrorResponse(`Existing email`, 400))
+            }
 
             const newUser = new User({
                 email,

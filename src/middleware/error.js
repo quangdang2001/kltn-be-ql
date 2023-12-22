@@ -1,6 +1,7 @@
 const ErrorResponse = require('../utils/ErrorResponse')
 
 const errorHandler = (err, req, res, next) => {
+    console.log("Error handler")
     err.statusCode = err.statusCode || 500;
 
     if (process.env.NODE_ENV === 'DEVELOPMENT') {
