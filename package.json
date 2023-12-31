@@ -11,7 +11,7 @@
         "data:import": "node src/seeder/seeder ",
         "build": "tsc",
         "data:destroy": "node src/seeder/seeder -d ",
-        "start": "nodemon index.js",
+        "start": "npm run prod",
         "dev": "SET NODE_ENV=DEVELOPMENT& nodemon index.js",
         "prod": "SET NODE_ENV=PRODUCTION& nodemon index.js",
         "swagger-autogen": "node src/seeder/swagger.js"
