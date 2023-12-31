@@ -67,10 +67,10 @@ app.use(cors(corsOptions))
 // middle ware for dev log
 const morgan = require('morgan')
 
-if (process.env.NODE_ENV == 'develop') {
-    app.use(morgan('dev'))
-}
-//
+// if (process.env.NODE_ENV == 'develop') {
+app.use(morgan('dev'))
+    // }
+    //
 app.use(cookieParser())
     //
 app.use(express.json())
